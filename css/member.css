@@ -1,0 +1,142 @@
+body{
+  margin: 0;
+}
+
+.header{
+  /* border: 1px solid black; */
+  width: 1440px;
+  height: 313px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header .top #top1{
+  position: absolute;
+  width: 144px;
+  height: 23px;
+  left: 973px;
+  top: 32px;
+
+  font-size: 18px;
+  line-height: 23px;
+  color: #C8A063;
+}
+
+.header .top #top2{
+  position: absolute;
+  width: 80px;
+  height: 20px;
+  left: 1137px;
+  top: 32px;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header .icon #icon1{
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  left: 1238px;
+  top: 30px;
+}
+
+.header .icon #icon2{
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  left: 1267px;
+  top: 30px;
+}
+
+.header .icon #icon3{
+  width: 25px;
+  height: 25px;
+
+  position: absolute;
+  left: 1295px;
+  top: 30px;
+}
+
+.header div.logo{
+  position: absolute;
+  width: 507px;
+  height: 82px;
+  top: 54px;
+  background: #A9A3A9;
+}
+
+.header div.logo img{
+  position: absolute;
+  width: 216px;
+  height: 61px;
+  left: 277px;
+  top: 10px;
+}
+
+.header .nav ul{
+  /* border: 1px soslid black; */
+  list-style: none;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  left: 500px;
+  top: 38px;
+}
+
+.header .nav li{
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 25px;
+  vertical-align: middle;
+  margin-left: 30px;
+}
+
+.header .nav > a{
+  width: 80px;
+  height: 80px;
+}
+
+.header .nav a{
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-left: 25px;
+  border-right: 5px;
+  color: black;
+}
+
+.header .nav a:hover{
+  background-color: #A9A3A9;
+}
+
+.header .nav #cafe{
+  width: 82px;
+  height: 81px;
+}
+
+.header .time{
+  /* border: 1px solid black; */
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: black;
+
+  position: absolute;
+  width: 16px;
+  height: 180px;
+  left: 1268px;
+  top: 115px;
+}
+
+div .background{
+  border: 1px solid black;
+  width: 304px;
+  height: 1902px;
+  background-color: #C8A063;
+}
