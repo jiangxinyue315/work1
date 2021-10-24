@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  font-family: "Nunito";
 }
 
 .header{
@@ -330,33 +331,30 @@ body{
   bottom: 440px;
 }
 
-.section1magazine .mpng{
+.section1magazine .mword{
   /* border: 1px solid black; */
+  width: 996px;
+  height: 400px;
   display: inline-block;
   box-sizing: border-box;
-  height: 285px;
-  width: 1440px;
-  padding-left: 200px;
-  padding-top: 205px;
+  position: absolute;
+  margin-left: 222px;
+  margin-top: 205px;
+  overflow: hidden;
 }
 
-.section1magazine .mpng a{
-  /* border: 1px solid black; */
-  vertical-align: middle;
-  padding-left: 15px;
+.section1magazine .mword > div{
+  width: 285px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 20px;
 }
 
 .section1magazine .iconright{
-  padding-left: 55px;
-}
-
-.section1magazine .mwordm1{
-  /* border: 1px solid black; */
-  display: inline-block;
-  box-sizing: border-box;
-  width: 285px;
-  margin-left: 215px;
-  margin-top: 132px;
+  position: absolute;
+  padding-left: 650px;
+  padding-top: 190px;
+  /* padding-left: 55px; */
 }
 
 .section1magazine .mwordm1-1{
@@ -376,14 +374,6 @@ body{
   float: right;
 }
 
-.section1magazine .mwordm2{
-  /* border: 1px solid black; */
-  display: inline-block;
-  box-sizing: border-box;
-  width: 285px;
-  margin-left: 15px;
-}
-
 .section1magazine .mwordm2-1{
   font-size: 20px;
   letter-spacing: 0.1em;
@@ -399,14 +389,6 @@ body{
 
 .section1magazine #icon3{
   float: right;
-}
-
-.section1magazine .mwordm3{
-  /* border: 1px solid black; */
-  display: inline-block;
-  box-sizing: border-box;
-  width: 285px;
-  margin-left: 15px;
 }
 
 .section1magazine .mwordm3-1{
@@ -533,7 +515,8 @@ body{
   right: 100px;
   top: 25px;
 
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .section2book .bookppp p{
@@ -541,9 +524,29 @@ body{
 }
 
 .section2book .bookpng3{
+  border: 1px solid black;
+  width: 590px;
+  height: 388px;
   position: absolute;
   left: 120px;
   top: 170px;
+}
+
+.section2book .bookpng3 .book1{
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+
+.section2book .bookpng3 .book2{
+  position: absolute;
+  left: 102px;
+  z-index: 2;
+}
+
+.section2book .bookpng3 .book3{
+  position: absolute;
+  z-index: 1;
 }
 
 .section3{
@@ -677,16 +680,20 @@ body{
 }
 
 .section4{
-  /* border: 1px solid black; */
+  border: 1px solid black;
   width: 1440px;
   height: 250px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
-.section4 > div{
-  /* border:1px solid red; */
-  vertical-align: top;
-  display: inline-block;
+.section4 .memberupgrade_background:nth-child(2){
+  justify-self: center;
+}
+
+.section4 .space_background:nth-child(3){
+  justify-self: end;
 }
 
 .section4 .member_background{
@@ -734,7 +741,7 @@ body{
   width: 184px;
   height: 169px;
   background: #C4B8AA;
-  margin-left: 16px;
+
 }
 
 .section4 .memberupgrade_background a{
@@ -765,7 +772,6 @@ body{
   width: 608px;
   height: 169px;
   background: #F1F1F1;
-  margin-left: 15px;
 }
 
 .section4 .space_background p{
