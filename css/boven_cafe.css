@@ -150,9 +150,9 @@ body{
 }
 
 .section_menu{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 1440px;
-  height: 850px;
+  height: 900px;
   margin: 0 auto;
   position: relative;
 }
@@ -231,127 +231,180 @@ body{
   top: 20px;
 }
 
-.section_menu .menu{
-  /* border: 5px solid yellow; */
-  height: 700px;
+.section_menu .grid_menu{
+  /* border: 1px solid black; */
   width: 1200px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 590px 590px;
+  grid-template-rows: 330px 330px;
+  gap: 20px 20px;
   position: absolute;
-  top: 100px;
   left: 120px;
+  top: 120px;
 }
 
-.section_menu .menu > aside{
-  display: inline-block;
-  margin: 3px;
+.section_menu .grid_menu img{
+  width: 250px;
 }
 
-.section_menu .coffee{
-  width: 590px;
-  height: 294px;
-  background: #DEC4B5;
+.section_menu .grid_menu h2{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 25px;
 }
 
-.section_menu .coffee div{
-  display: inline-block;
-  margin-right: 40px;
-  margin-left: 40px;
-}
-
-.section_menu .coffee .coffeename{
+.section_menu .grid_menu p{
   font-size: 20px;
   line-height: 25px;
 }
 
-.section_menu .coffee .coffeeprice{
+.section_menu .grid_menu .coffee{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #DEC4B5;
+  justify-items: center;
+}
+
+.section_menu .grid_menu .toast{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: end;
+  justify-items: center;
+}
+
+.section_menu .grid_menu .food{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: center;
+  justify-items: center;
+}
+
+.section_menu .grid_menu .drink{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-content: end;
+  justify-items: center;
+  background-color: #DEC4B5;
+}
+
+.section_activity{
+  /* border: 1px solid blue; */
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section_activity .labe4 .labe4png{
+  margin-left: 120px;
+  height: 50px;
+}
+
+.section_activity .labe4 .talklabe0{
+  border-top: 5px solid #A9A3A9;
+  width: 300px;
+  margin-left: 120px;
+}
+
+.section_activity .labe4 .triangle{
+  /* border: 100px solid red; */
+  border-left: 0px solid;
+  border-right: 30px solid #A9A3A9;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: 290px;
+  top: 32px;
+  margin-left: 120px;
+}
+
+.section_activity .labe4 .talklabe1{
+  border-top: 5px solid #A9A3A9;
+  width: 20px;
+  position: absolute;
+  left: 321px;
+  top: 28px;
+  margin-left: 120px;
+  transform: matrix(0.82, -0.58, 0.57, 0.82, 0, 0);
+}
+
+.section_activity .labe4 .talklabe2{
+  border-top: 5px solid #A9A3A9;
+  width: 20px;
+  position: absolute;
+  left: 323px;
+  top: 53px;
+  margin-left: 120px;
+}
+
+.section_activity .labe4 .talklabe3{
+  border-top: 5px solid #A9A3A9;
+  width: 20px;
+  position: absolute;
+  left: 321px;
+  top: 77px;
+  margin-left: 120px;
+  transform: matrix(-0.82, -0.58, 0.57, -0.82, 0, 0);
+}
+
+.section_activity .labe4 .h3-1{
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  margin: 0;
+
+  position: absolute;
+  left: 250px;
+  top: 10px;
+}
+
+.section_activity .labe4 .h3-2{
   font-size: 20px;
-  line-height: 25px;
+  letter-spacing: 0.05em;
+
+  position: absolute;
+  left: 470px;
+  top: 20px;
 }
 
-.section_menu .menu img{
-  /* border: 1px solid black; */
-  width: 40%;
+.section_activity .grid_img{
+  display: grid;
+  grid-template-columns: 416px 784px 416px;
+  grid-template-rows: 100px 400px;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  width: 1440;
+  position: relative;
+  top: 80px;
 }
 
-.section_menu .toast{
-  width: 590px;
-  height: 294px;
-  background: white;
+.section_activity .grid_img img{
+  width: 100%
 }
 
-.section_menu .toast div{
-  display: inline-block;
-  margin-right: 40px;
-  margin-left: 40px;
+.section_activity .grid_img .activity1{
+  opacity: 0.5;
 }
 
-.section_menu .toast .toastname{
-  font-size: 20px;
-  line-height: 25px;
+.section_activity .grid_img .activity2{
+  opacity: 0.5;
 }
 
-.section_menu .toast .toastprice{
-  font-size: 20px;
-  line-height: 25px;
+.section_activity .grid_img .grid_img_2 .activity0_info{
+  width: 500px;
+  padding: 30px;
+  margin-top: 15px;
+  background-color: #DEC4B5;
 }
 
-.section_menu .toast img{
-  width: 30%;
-  float: right;
+.section_activity .js{
+  text-align: center;
 }
 
-.section_menu .food{
-  width: 590px;
-  height: 294px;
-  background: white;
-}
-
-.section_menu .food div{
-  display: inline-block;
-  margin-right: 40px;
-  margin-left: 40px;
-}
-
-.section_menu .food .foodname{
-  font-size: 20px;
-  line-height: 25px;
-}
-
-.section_menu .food .foodprice{
-  font-size: 20px;
-  line-height: 25px;
-}
-
-.section_menu .food img{
-  /* border: 1px solid black; */
-  width: 40%;
-}
-
-.section_menu .drink{
-  width: 590px;
-  height: 294px;
-  background: #DEC4B5;
-}
-
-.section_menu .drink div{
-  display: inline-block;
-  margin-right: 40px;
-  margin-left: 40px;
-}
-
-.section_menu .drink .drinkname{
-  font-size: 20px;
-  line-height: 25px;
-}
-
-.section_menu .drink .drinkprice{
-  font-size: 20px;
-  line-height: 25px;
-}
-
-.section_menu .drink img{
-  /* border: 1px solid black; */
-  width: 40%;
+.section_activity button{
+  border: transparent;
+  background-color: transparent;
 }
 
 .footer{
@@ -360,6 +413,7 @@ body{
   height: 500px;
   margin: 0 auto;
   position: relative;
+  top: 60px;
   background-color: #A9A3A9;
 }
 
