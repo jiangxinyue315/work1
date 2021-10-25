@@ -125,20 +125,6 @@ body{
   box-sizing: border-box;
   font-size: 16px;
   line-height: 20px;
-
-  position: absolute;
-  width: 16px;
-  height: 180px;
-  left: 1268px;
-  top: 115px;
-}
-
-.header .time{
-  /* border: 1px solid black; */
-  display: inline-block;
-  box-sizing: border-box;
-  font-size: 16px;
-  line-height: 20px;
   text-decoration: none;
   color: black;
 
@@ -147,6 +133,17 @@ body{
   height: 180px;
   left: 1268px;
   top: 115px;
+}
+
+.header .button_label2{
+  border: transparent;
+  background-color: transparent;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  left: 1345px;
+  top: 690px;
+  z-index: 1
 }
 
 .section_menu{
