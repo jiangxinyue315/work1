@@ -6,6 +6,7 @@
     <meta name="keywords" content="關鍵詞組">
     <meta name="description" content="網頁簡短描述建議70字">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./vendors/animate_css/css/animate.css">
   </head>
   <body>
     <header class="header">
@@ -34,13 +35,13 @@
             <a href="./boven_cafe.html"><img src="./header/boven cafe.jpg" alt="boven cafe" id="cafe"></a>
           </li>
           <li>
-            <a href="#" id="nav1">最新雜誌</a>
+            <a href="#section1magazine" id="nav1">最新雜誌</a>
           </li>
           <li>
-            <a href="#" id="nav2">最新選書</a>
+            <a href="#section2book" id="nav2">最新選書</a>
           </li>
           <li>
-            <a href="#" id="nav3">活動訊息</a>
+            <a href="#section3" id="nav3">活動訊息</a>
           </li>
           <li>
             <a href="./member.html" id="nav4">會員制度</a>
@@ -50,10 +51,11 @@
           </li>
         </ul>
       </nav>
-      <a href="#"><p class="time">開館 - 營業時間調整</p></a>
-      <button type="button" name="button" class="button_label2">
-        <img src="./section0/label2.png" alt="label2">
-      </button>
+        <div class="right_sidebar">
+          <button type="button" class="time">開館 - 營業時間調整</button>
+        </div>
+      </div>
+      <a href="#" class="top_label2"><img src="./section0/label2.png" alt="label2"></a>
     </header>
 
     <section class="section0">
@@ -73,7 +75,7 @@
       </div>
     </section>
 
-    <section class="section1magazine">
+    <section class="section1magazine" id="section1magazine">
       <div class="labe3">
         <p class="h2-1">最新雜誌</p>
         <p class="h2-2">更多新·二手雜誌×露天賣場</p>
@@ -145,7 +147,7 @@
       </div>
     </section>
 
-    <section class="section2book">
+    <section class="section2book" id="section2book">
       <div class="labe4">
         <div class="labe4png">
           <img src="./section0/label1.png" alt="label1" id="labe4">
@@ -181,7 +183,7 @@
       </div>
     </section>
 
-    <section class="section3">
+    <section class="section3" id="section3">
       <div class="labe3">
         <p class="h3-1">活動</p>
         <p class="h3-2">2021年2月10日 星期三，上午10:00 – 下午9:00</p>
@@ -247,7 +249,16 @@
         <p>本網站為緯育TibaMe前端設計工程師班第72期學員專題作品，本平台僅供學習、展示之用。參考資源:boven 雜誌圖書館 FB|boven cafe FB|@mag.boven。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。 ※ [TibaMe-前端設計工程師養成班]請超連結https://www.facebook.com/webindex/</p>
       </div>
     </footer>
+    <script src="./js/jquery/jquery.min.js"></script>
     <script>
+    $(function(){
+    // 點擊
+      $("button.time").on("click", function(){
+        // -open 的樣式切換
+        $(this).closest("div.right_sidebar").toggleClass("-open");
+      });
+    });
     </script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

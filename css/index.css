@@ -93,26 +93,26 @@ body{
   font-size: 20px;
   line-height: 25px;
   vertical-align: middle;
-  margin-left: 30px;
-}
-
-.header .nav > a{
-  width: 80px;
-  height: 80px;
+  margin-left: 29px;
+  margin-bottom: 0;
+  text-align: center;
+  /* border-left: 25px;
+  border-right: 5px; */
 }
 
 .header .nav a{
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
-  border-left: 25px;
-  border-right: 5px;
+  /* border-left: 25px;
+  border-right: 5px; */
   color: black;
 }
 
 .header .nav a:hover{
   background-color: #A9A3A9;
 }
+
 
 .header .nav #cafe{
   width: 82px;
@@ -133,16 +133,19 @@ body{
   height: 180px;
   left: 1268px;
   top: 115px;
+
+  border: transparent;
+  background-color: transparent;
 }
 
-.header .button_label2{
+.header .top_label2{
   border: transparent;
   background-color: transparent;
   position: fixed;
   width: 30px;
   height: 30px;
   left: 1345px;
-  top: 690px;
+  top: 650px;
   z-index: 1
 }
 
@@ -552,11 +555,23 @@ body{
   position: absolute;
   left: 102px;
   z-index: 2;
+  opacity: 0.5;
 }
 
 .section2book .bookpng3 .book3{
   position: absolute;
   z-index: 1;
+  opacity: 0.5;
+}
+
+.section2book .bookpng3 .book2:hover{
+  z-index: 3;
+  opacity: 1;
+}
+
+.section2book .bookpng3 .book3:hover{
+  z-index: 3;
+  opacity: 1;
 }
 
 .section3{

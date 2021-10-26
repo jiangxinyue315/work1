@@ -135,15 +135,19 @@ body{
   top: 115px;
 }
 
-.header .button_label2{
+.header .top_label2{
   border: transparent;
   background-color: transparent;
   position: fixed;
   width: 30px;
   height: 30px;
   left: 1345px;
-  top: 690px;
+  top: 650px;
   z-index: 1
+}
+
+.no{
+  height: 70px;
 }
 
 .main > section h2{
@@ -231,6 +235,7 @@ body{
 
 .main .section_form .button_and_submit{
   float: right;
+
 }
 
 .main .section_form .button_and_submit #button_back{
@@ -254,6 +259,20 @@ body{
   letter-spacing: 0.1em;
   width: 82px;
   height: 49px;
+  margin-left: 20px;
+}
+
+.main .section_form .button_and_submit a{
+  text-decoration: none;
+  color: white;
+}
+
+.main .section_form .button_and_submit #button_back:hover{
+  background-color: #C8A063;
+}
+
+.main .section_form .button_and_submit #button_submit:hover{
+  background-color: #C8A063;
 }
 
 .footer{
