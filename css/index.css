@@ -363,6 +363,10 @@ body{
   margin-right: 20px;
 }
 
+.section1magazine .mword a{
+  display: inline-block;
+}
+
 .section1magazine .iconright{
   position: absolute;
   padding-left: 650px;
@@ -384,7 +388,8 @@ body{
 }
 
 .section1magazine #icon3{
-  float: right;
+  position: relative;
+  left: 255px;
 }
 
 .section1magazine .mwordm2-1{
@@ -525,11 +530,33 @@ body{
   font-size: 20px;
 
   position: absolute;
-  right: 100px;
+  right: 50px;
   top: 25px;
 
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.section2book .bookppp p{
+  margin-right: 30px;
+}
+
+.section2book .bookppp::-webkit-scrollbar {
+  width: 20px;
+}
+
+.section2book .bookppp::-webkit-scrollbar-track {
+  background: #C4B8AA;
+}
+
+.section2book .bookppp::-webkit-scrollbar-thumb {
+  border: 1px solid white;
+  border-radius: 10px;
+  background: #A9A3A9;
+}
+
+.section2book .bookppp::-webkit-scrollbar-thumb:hover {
+  background: #C8A063;
 }
 
 .section2book .bookppp p{
