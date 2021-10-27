@@ -295,63 +295,29 @@ body{
 }
 
 .main .section_member .buttona{
-  border: 1px solid #A9A3A9;
-  width: 82px;
-  height: 82px;
-  background-color: #A9A3A9;
-  display: inline-block;
   float: right;
 }
 
-.main .section_member .buttona a{
-  text-decoration: none;
-  color: black;
-  padding-top: 100%;
-  transform: translateY(-50%);
-  padding-left: 26%;
-  display: inline-block;
-}
-
-.main .section_member .buttona p{
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 23px;
-  letter-spacing: 0.1em;
-  margin: 0;
-}
-
-.main .aside_botton{
+.main .aside_button{
   position: absolute;
-  right: 303px;
-  top: 708px;
+  right: 300px;
+  top: 700px;
 }
 
-.main .aside_botton .buttona2{
-  margin-top: 863px;
+.main .aside_button .buttona2{
+  margin-top: 870px;
 }
 
-.main .aside_botton > div{
-  border: 1px solid #A9A3A9;
-  width: 82px;
-  height: 82px;
-  background-color: #A9A3A9;
-}
-
-.main .aside_botton a{
-  text-decoration: none;
-  color: black;
-  padding-top: 100%;
-  transform: translateY(-50%);
-  padding-left: 26%;
-  display: inline-block;
-}
-
-.main .aside_botton p{
+.main .aside_button button{
+  border: 3px solid #C4B8AA;
+  width: 80px;
+  height: 80px;
+  background-color: #F1F1F1;
+  cursor: pointer;
   font-weight: 600;
   font-size: 18px;
   line-height: 23px;
   letter-spacing: 0.1em;
-  margin: 0;
 }
 
 .main .aside_botton .buttona1:hover{

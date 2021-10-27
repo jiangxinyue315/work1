@@ -142,8 +142,6 @@ body{
   border: transparent;
   background-color: transparent;
   position: fixed;
-  width: 30px;
-  height: 30px;
   left: 1345px;
   top: 650px;
   z-index: 1
@@ -341,7 +339,7 @@ body{
 .section1magazine .labe3 #icon3{
   position: absolute;
   left: 605px;
-  bottom: 440px;
+  top: 35px;
 }
 
 .section1magazine .mword{
@@ -389,7 +387,8 @@ body{
 
 .section1magazine #icon3{
   position: relative;
-  left: 255px;
+  left: 250px;
+  top: -3px;
 }
 
 .section1magazine .mwordm2-1{
@@ -405,10 +404,6 @@ body{
   line-height: 23px;
 }
 
-.section1magazine #icon3{
-  float: right;
-}
-
 .section1magazine .mwordm3-1{
   font-size: 20px;
   letter-spacing: 0.1em;
@@ -420,10 +415,6 @@ body{
   margin: 0;
   font-size: 18px;
   line-height: 23px;
-}
-
-.section1magazine #icon3{
-  float: right;
 }
 
 .section2book{
