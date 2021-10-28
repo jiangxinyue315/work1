@@ -239,11 +239,22 @@ body{
 }
 
 .section_background_img .h3-456{
+  display: inline-block;
   font-size: 20px;
   line-height: 25px;
-  display: inline-block;
   margin-top: 30px;
   margin-left: 73px;
+}
+
+.section_background_img .h3-456 .img-h3-4 p{
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin: 0;
+}
+
+.section_background_img .h3-456 .img-h3-5 p{
+  /* border: 1px solid red; */
+  display: inline-block;
 }
 
 .section_background_img #button_toform{
