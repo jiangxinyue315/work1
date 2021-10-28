@@ -207,7 +207,7 @@ body{
   margin-top: 30px;
 }
 
-.main .section_member .buttona{
+/* .main .section_member .buttona{
   border: 1px solid #A9A3A9;
   width: 82px;
   height: 82px;
@@ -231,7 +231,7 @@ body{
   line-height: 23px;
   letter-spacing: 0.1em;
   margin: 0;
-}
+} */
 
 .main .member_upgrade .upgrade{
   position: absolute;
@@ -294,7 +294,35 @@ body{
   right: 2px;
 }
 
-.main .section_member .buttona{
+.aside_botton{
+  /* border: 1px solid black; */
+  display: inline-block;
+  position: absolute;
+  right: 303px;
+  top: 711px;
+}
+
+.aside_botton button{
+  width: 80px;
+  height: 80px;
+  background-color: #F1F1F1;
+  border: 2px solid #C4B8AA;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.aside_botton button p{
+  margin: 0;
+}
+
+.aside_botton .buttona2{
+  margin-top: 868px;
+}
+
+/* .main .section_member .buttona{
   border: 1px solid #A9A3A9;
   width: 82px;
   height: 82px;
@@ -360,7 +388,7 @@ body{
 
 .main .aside_botton .buttona2:hover{
   background-color: #C8A063;
-}
+} */
 
 .footer{
   /* border: 1px solid black; */

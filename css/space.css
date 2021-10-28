@@ -250,6 +250,7 @@ body{
   /* border: 1px solid red; */
   display: inline-block;
   margin: 0;
+  vertical-align: top;
 }
 
 .section_background_img .h3-456 .img-h3-5 p{
@@ -257,11 +258,15 @@ body{
   display: inline-block;
 }
 
+.section_background_img .h3-456 .img-h3-5 img{
+  vertical-align: middle;
+}
+
 .section_background_img #button_toform{
-  border: transparent;
   width: 183px;
   height: 42px;
-  background-color: #A9A3A9;
+  background-color: #C4B8AA;
+  border: 2px solid #F1F1F1;
   font-size: 16px;
   font-weight: bold;
   line-height: 20px;
@@ -272,7 +277,7 @@ body{
 }
 
 .section_background_img #button_toform:hover{
-  background-color: #C8A063;
+  cursor: pointer;
 }
 
 .main_picture{
@@ -443,10 +448,10 @@ body{
 }
 
 .main_picture .cafe #button_toform{
-  border: transparent;
   width: 183px;
   height: 42px;
-  background-color: #A9A3A9;
+  background-color: #DEC4B5;
+  border: 2px solid #F1F1F1;
   font-size: 16px;
   font-weight: bold;
   line-height: 20px;
@@ -457,7 +462,7 @@ body{
 }
 
 .main_picture .cafe #button_toform:hover{
-  background-color: #C8A063;
+   cursor: pointer;
 }
 
 .main_picture .library{
@@ -619,10 +624,10 @@ body{
 }
 
 .main_picture .library #button_toform{
-  border: transparent;
   width: 183px;
   height: 42px;
-  background-color: #A9A3A9;
+  background-color: #C4B8AA;
+  border: 2px solid #F1F1F1;
   font-size: 16px;
   font-weight: bold;
   line-height: 20px;
@@ -633,7 +638,7 @@ body{
 }
 
 .main_picture .library #button_toform:hover{
-  background-color: #C8A063;
+   cursor: pointer;
 }
 
 .footer{
