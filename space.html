@@ -6,6 +6,7 @@
     <meta name="keywords" content="關鍵詞組">
     <meta name="description" content="網頁簡短描述建議70字">
     <link rel="stylesheet" href="./css/space.css">
+    <link rel="stylesheet" href="./vendors/aos/css/aos.css"/>
   </head>
   <body>
     <header class="header">
@@ -87,7 +88,7 @@
     </section>
 
     <main class="main_picture">
-      <section class="cafe">
+      <section class="cafe" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear" data-aos-once="true">
         <div class="cafe_title">
           <div class="talklabe">
             <div class="talklabe0">
@@ -121,7 +122,7 @@
         <button type="button" name="button" id="button_toform">空間租借表單</button>
       </section>
 
-      <section class="library">
+      <section class="library" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear" data-aos-once="true">
         <div class="library_title">
           <div class="talklabe">
             <div class="talklabe0">
@@ -185,5 +186,9 @@
     </footer>
     <script src="./js/jquery/jquery.min.js"></script>
     <script src="./js/space.js"></script>
+    <script src="./vendors/aos/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

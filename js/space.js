@@ -7,3 +7,7 @@ $(function(){
     }, 750);
   });
 });
+
+$(function(){
+  AOS.init();
+});

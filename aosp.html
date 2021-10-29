@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./vendors/aos/css/aos.css">
+    <style>
+      .top_block, .bottom_block{
+        height: 1000px;
+        border: 1px solid gray;
+        background-color: lightgray;
+      }
+
+      div.custom_block{
+        border: 1px solid red;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top_block">上面的內容</div>
+
+    <div class="custom_block" data-aos="fade-up">測試的文字2</div>
+
+    <div class="bottom_block">底部的內容</div>
+
+  </body>
+  <!-- <script src="./vendors/aos/js/aos.js"></script> -->
+  <script src="./vendors/aos.js"></script>
+  <script>
+    $(function(){
+      AOS.init();
+    });
+  </script>
+</html>

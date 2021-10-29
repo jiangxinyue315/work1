@@ -15,3 +15,11 @@ $(function(){
     $("div.block").toggleClass("move");
   });
 });
+
+$(function(){
+  // 使用者點擊按鈕，會執行以下 function 裡的程式
+  $("button.trigger").hover(function(){
+    // 加上 animated 和 bounce 這兩個 class
+    $("button.trigger").addClass("animate__animated animate__wobble");
+  });
+});
