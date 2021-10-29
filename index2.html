@@ -55,7 +55,7 @@
           <button type="button" class="time">開館 - 營業時間調整</button>
         </div>
       </div>
-      <a href="#" class="top_label2"><img src="./images\icon_top.svg" alt="label2"></a>
+      <button type="button" name="button" class="top_label2"><img src="./images\icon_top.svg" alt="label2"></button>
     </header>
 
     <section class="section0">
@@ -247,15 +247,6 @@
       </div>
     </footer>
     <script src="./js/jquery/jquery.min.js"></script>
-    <script>
-    $(function(){
-    // 點擊
-      $("button.time").on("click", function(){
-        // -open 的樣式切換
-        $(this).closest("div.right_sidebar").toggleClass("-open");
-      });
-    });
-    </script>
     <script src="./js/index.js"></script>
   </body>
 </html>

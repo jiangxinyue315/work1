@@ -50,7 +50,7 @@
           </li>
         </ul>
       </nav>
-      <a href="#" class="top_label2"><img src="./images\icon_top.svg" alt="label2"></a>
+      <button type="button" name="button" class="top_label2"><img src="./images\icon_top.svg" alt="label2"></button>
     </header>
 
     <main class="main">
@@ -121,10 +121,10 @@
 
       <aside aside class="aside_botton">
         <div class="buttona1">
-          <button type="button" name="button"><p>線上<br>申請</p></button>
+          <button type="button" name="button" class="btn_modal"><p>線上<br>申請</p></button>
         </div>
         <div class="buttona2">
-          <button type="button" name="button"><p>線上<br>申請</p></button>
+          <button type="button" name="button" class="btn_modal"><p>線上<br>申請</p></button>
         </div>
       <!-- <aside class="aside_botton">
         <div class="buttona1">
@@ -136,7 +136,148 @@
       </aside> -->
     </main>
 
-    <!-- <footer  class="footer">
+    <div class="overlay" style="border: 1px solid red;">
+      <article class="overlay_article">
+        <section class="section_inform">
+          <table class="table_inform">
+            <thead>
+              <tr>
+                <th><h2>個人資料保護告知</h2></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th><h3>-《boven雜誌圖書館》基於出借書籍之目的，蒐集會員之個人資料（包含姓名、生日、身份證字號、電話、住址、電子信箱等其他足資識別該個人之資料）。</h3></th>
+              </tr>
+              <tr>
+                <th><h3>-在未經會員同意之下，boven絕不會將會員的個人資料提供予任何與本館服務無關之第三人，或移作其他目的使用。</h3></th>
+              </tr>
+              <tr>
+                <th><h3>-會員對於其個人資料，有查詢補充、更正、刪除等需求時可與boven聯繫，我們將儘速進行變更處理。</h3></th>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="section_transfer">
+          <table class="table_transfer">
+            <thead>
+              <tr>
+                <th><h2>匯款資訊</h2></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th><h3>-中國信託 000分行分行</h3></th>
+              </tr>
+              <tr>
+                <th><h3>-帳號：000-000-123-123</h3></th>
+              </tr>
+              <tr>
+                <th><h3>-戶名：工作室</h3></th>
+              </tr>
+              <tr>
+                <th><h3>確認款項之後，所申辦項目當日立即生效，我們會寄送mail通知，如申辦閱讀計畫將提供雲端書單挑選想閱讀的雜誌。若3日內未收到通知，請來電或來信 mag.boven@gmail.com 告知。</h3></th>
+              </tr>
+            </tbody>
+          </table>
+         </section>
+
+        <section class="section_form">
+          <div class="h2">
+            <h2 class="h2h2">線上申請表單</h2>
+          </div>
+
+          <div class="div_form">
+            <form class="form_onlineapplication" action="#" method="post">
+              <div class="readed_inform">
+                <h2>是否已經詳細閱讀並且同意上述借閱服務條款及個資保護法。</h2>
+                <h3>
+                  <input type="radio" name="readed_inform" value="1" id="yes" checked>
+                  <label for="yes">是</label>
+                </h3>
+                <h3>
+                  <input type="radio" name="readed_inform" value="2" id="no">
+                  <label for="no">否</label>
+                </h3>
+              </div>
+
+              <div class="application_options">
+                <h2>申辦項目(可複選)</h2>
+                <h3>
+                  <input type="checkbox" name="option1" value="option1" id="option1">
+                  <label for="option1">加入boven會員 $1200</label>
+                </h3>
+                <h3>
+                  <input type="checkbox" name="option3" value="option3" id="option3">
+                  <label for="option3">Home Reading閱讀計畫 $1000 （限boven會員申辦）</label>
+                </h3>
+                <h3>
+                  <input type="checkbox" name="option4" value="option4" id="option4">
+                  <label for="option4">加入boven會員，同時加購Home Reading閱讀計畫 $2200</label>
+                </h3>
+              </div>
+
+              <div class="borrow_type">
+                <h2>借閱方式</h2>
+                <h3>
+                  <input type="radio" name="borrow_type" value="1" id="yes" checked>
+                  <label for="yes">親自到圖書館借、還書（請先來電預約）</label>
+                </h3>
+                <h3>
+                  <input type="radio" name="borrow_type" value="2" id="no">
+                  <label for="no">自行連絡快遞或貨運取件（EX：Lalamove、順豐等）</label>
+                </h3>
+              </div>
+
+              <div class="applicant">
+                <h2>申辦人姓名</h2>
+                <input type="text" name="name">
+              </div>
+
+              <div class="gender">
+                <h2>性別</h2>
+                <h3>
+                  <input type="radio" name="gender" value="1" id="yes" checked>
+                  <label for="yes">男</label>
+                </h3>
+                <h3>
+                  <input type="radio" name="gender" value="2" id="no">
+                  <label for="no">女</label>
+                </h3>
+              </div>
+
+              <div class="id_card">
+                <h2>身分證字號</h2>
+                <input type="text" name="name">
+              </div>
+              <div class="phone">
+                <h2>手機號碼</h2>
+                <input type="text" name="name">
+              </div>
+              <div class="address">
+                <h2>連絡寄送地址（親自換書請填到店取書即可）</h2>
+                <input type="text" name="name">
+              </div>
+              <div class="address">
+                <h2>電子信箱</h2>
+                <input type="email" name="name">
+              </div>
+              <div class="address">
+                <h2>匯款帳號後5碼</h2>
+                <input type="text" name="name">
+              </div>
+              <div class="button_and_submit">
+                <button type="button" name="button" id="button_back"><a href="./member.html">返回</a></button>
+                <button type="submit" name="button" id="button_submit">提交</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </article>
+    </div>
+
+    <footer  class="footer">
       <div class="logo">
         <a href="#"><img src="./header/logo.png" alt="logo"></a>
         <div class="map">
@@ -162,6 +303,8 @@
       <div class="p">
         <p>本網站為緯育TibaMe前端設計工程師班第72期學員專題作品，本平台僅供學習、展示之用。參考資源:boven 雜誌圖書館 FB|boven cafe FB|@mag.boven。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。 ※ [TibaMe-前端設計工程師養成班]請超連結https://www.facebook.com/webindex/</p>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/jquery/jquery.min.js"></script>
+    <script src="./js/member.js"></script>
   </body>
 </html>

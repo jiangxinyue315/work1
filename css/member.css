@@ -140,14 +140,13 @@ body{
 }
 
 .header .top_label2{
-  border: transparent;
-  background-color: transparent;
+  background: none;
+  border: none;
   position: fixed;
-  width: 30px;
-  height: 30px;
-  left: 1345px;
-  top: 650px;
-  z-index: 1
+  right: 120px;
+  bottom: 30px;
+  z-index: 3;
+  cursor: pointer;
 }
 
 .main{
@@ -206,32 +205,6 @@ body{
 .main .section_member .introduce_all > div{
   margin-top: 30px;
 }
-
-/* .main .section_member .buttona{
-  border: 1px solid #A9A3A9;
-  width: 82px;
-  height: 82px;
-  background-color: #A9A3A9;
-  display: inline-block;
-  float: right;
-}
-
-.main .section_member .buttona a{
-  text-decoration: none;
-  color: black;
-  padding-top: 100%;
-  transform: translateY(-50%);
-  padding-left: 26%;
-  display: inline-block;
-}
-
-.main .section_member .buttona p{
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 23px;
-  letter-spacing: 0.1em;
-  margin: 0;
-} */
 
 .main .member_upgrade .upgrade{
   position: absolute;
@@ -322,73 +295,161 @@ body{
   margin-top: 868px;
 }
 
-/* .main .section_member .buttona{
-  border: 1px solid #A9A3A9;
-  width: 82px;
-  height: 82px;
-  background-color: #A9A3A9;
+button{
+  cursor: pointer;
+}
+
+div.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: hsla(0, 0%, 0%, .5);
+  display: none;
+  overflow: auto;
+  z-index: 3;
+}
+
+/* 元素 article 置中及基本樣式 */
+div.overlay > article{
+  padding: 100px;
+}
+
+.overlay > section h2{
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.overlay > section h3{
+  font-size: 18px;
+  line-height: 24.5px;
+  font-weight: normal;
+}
+
+.overlay .overlay_article > section{
+  margin-bottom: 70px;
+}
+
+.overlay .section_inform{
+  /* border: 1px solid black; */
+  width: 895px;
+  height: 300px;
+  background-color: #C4B8AA;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  padding: 26;
+}
+
+.overlay .section_inform .table_inform h3{
+  margin-bottom: 0px;
+}
+
+.overlay .section_transfer {
+  border: 3px solid #A9A3A9;
+  background-color: white;
+  width: 895px;
+  height: 280px;
+  padding: 2%;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  position: relative;
+  left: 30%;
+}
+
+.overlay .section_transfer .table_transfer h2{
+  margin-top: 0;
+}
+
+.overlay .section_transfer .table_transfer h3{
+  margin-bottom: 0px;
+}
+
+.overlay .div_form{
+  /* border: 1px solid black; */
   display: inline-block;
+  box-sizing: border-box;
+  padding-left: 60px;
+}
+
+.overlay .h2 .h2h2{
+  box-sizing: border-box;
+  text-align: center;
+  color: #A9A3A9;
+}
+
+.overlay .section_form{
+  width: 793px;
+  height: 1450px;
+  padding: 2%;
+  background-color: #F1F1F1;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.overlay .section_form .form_onlineapplication div{
+  margin-top: 30px;
+}
+
+.overlay .section_form input[type=text]{
+  border: none;
+  border-bottom: 1.5px solid black;
+  background-color: transparent;
+  width: 350px;
+  font-size: 20px;
+}
+
+.overlay .section_form input[type=text]:focus{
+  outline-style: none;
+  border-bottom: 1.5px solid black;
+  font-size: 20px;
+}
+
+.overlay .section_form input[type=email]{
+  border: none;
+  border-bottom: 1.5px solid black;
+  background-color: transparent;
+  width: 350px;
+  font-size: 20px;
+}
+
+.overlay .section_form input[type=email]:focus{
+  outline-style: none;
+  border-bottom: 1.5px solid black;
+  font-size: 20px;
+}
+
+.overlay .section_form .button_and_submit{
   float: right;
 }
 
-.main .section_member .buttona a{
-  text-decoration: none;
-  color: black;
-  padding-top: 100%;
-  transform: translateY(-50%);
-  padding-left: 26%;
-  display: inline-block;
-}
-
-.main .section_member .buttona p{
-  font-weight: 600;
+.overlay .section_form .button_and_submit #button_back{
+  background-color: #C4B8AA;
+  border: 2px solid #F1F1F1;
   font-size: 18px;
+  font-weight: bold;
   line-height: 23px;
   letter-spacing: 0.1em;
-  margin: 0;
-}
-
-.main .aside_botton{
-  position: absolute;
-  right: 303px;
-  top: 708px;
-}
-
-.main .aside_botton .buttona2{
-  margin-top: 863px;
-}
-
-.main .aside_botton > div{
-  border: 1px solid #A9A3A9;
+  color: white;
   width: 82px;
-  height: 82px;
-  background-color: #A9A3A9;
+  height: 49px;
 }
 
-.main .aside_botton a{
-  text-decoration: none;
-  color: black;
-  padding-top: 100%;
-  transform: translateY(-50%);
-  padding-left: 26%;
-  display: inline-block;
-}
-
-.main .aside_botton p{
-  font-weight: 600;
+.overlay .section_form .button_and_submit #button_submit{
+  background-color: #C4B8AA;
+  border: 2px solid #F1F1F1;
   font-size: 18px;
+  font-weight: bold;
   line-height: 23px;
   letter-spacing: 0.1em;
-  margin: 0;
+  width: 82px;
+  height: 49px;
+  margin-left: 20px;
 }
 
-.main .aside_botton .buttona1:hover{
-  background-color: #C8A063;
+.overlay .section_form .button_and_submit a{
+  text-decoration: none;
+  color: white;
 }
-
-.main .aside_botton .buttona2:hover{
-  background-color: #C8A063;
-} */
 
 .footer{
   /* border: 1px solid black; */
